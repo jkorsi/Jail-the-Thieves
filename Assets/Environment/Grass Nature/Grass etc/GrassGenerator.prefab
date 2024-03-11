@@ -1,0 +1,69 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1532331264028471218
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7899244238920983337}
+  - component: {fileID: 891491042855686567}
+  m_Layer: 0
+  m_Name: GrassGenerator
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7899244238920983337
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1532331264028471218}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &891491042855686567
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1532331264028471218}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d1c023f31fb15346b10ae9ba930563d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefabsToPlace:
+  - {fileID: 2814578068160615490, guid: 33f6d96b81a6b384681c238046dc67eb, type: 3}
+  - {fileID: 9092811759517622205, guid: 1c10bf3319a12194584e477be9cc36a1, type: 3}
+  - {fileID: 246055644114204792, guid: 17134e585d1b4584ba75b6bec1e4884c, type: 3}
+  - {fileID: 6405800016712896282, guid: fc0e9bf2b76ac094996c0bbabd2e1487, type: 3}
+  - {fileID: 2626585196108881374, guid: de2db9d1b7739ed4e94367984e8bf75c, type: 3}
+  - {fileID: 1435963028593077513, guid: d3fa5dd1d5fcfc145be9b34b0da72bf9, type: 3}
+  - {fileID: 2704617665906856532, guid: 9f3f5041042a2824b8a90d75225992b6, type: 3}
+  - {fileID: 3461765659822697050, guid: 0fd6ea660bc30dc46abddc35ad69e2f0, type: 3}
+  - {fileID: 8749701759087501779, guid: 600417c520b9bec44b1d8b1e6b2c2d3e, type: 3}
+  minimumDistanceToExistingObject: 1
+  existingObjectsLayer:
+    serializedVersion: 2
+    m_Bits: 0
+  minUseMinSpreadForSimilars: 0
+  minSimilarsSpread: 1
+  useMaxDistanceFromSpecificObject: 0
+  specificObjectTag: 
+  maxDistanceFromSpecificObject: 10
+  amountOfAssetsToPlace: 5
+  maxPlacementAttemptsPerAsset: 10
+  mapGameObject: {fileID: 0}
+  minDistanceFromMapEdge: 2

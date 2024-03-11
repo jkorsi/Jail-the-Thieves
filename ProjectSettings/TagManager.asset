@@ -1,0 +1,61 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Road
+  - Building
+  - Map
+  - JailFloor
+  - Thief
+  - Police
+  - JailBack
+  - JailSortingTrigger
+  - JailFront
+  - GameOverUI
+  - GameUI
+  - foot
+  - PauseMenuUI
+  - Donut
+  - RightHand
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - Map
+  - Water
+  - UI
+  - MiniMap
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: MiniMap
+    uniqueID: 3339282793
+    locked: 0
+  - name: Default
+    uniqueID: 0
+    locked: 0

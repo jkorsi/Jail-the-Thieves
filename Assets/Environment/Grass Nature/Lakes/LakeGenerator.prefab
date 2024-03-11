@@ -1,0 +1,63 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2994361812496322638
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3012592176057914046}
+  - component: {fileID: 3655599459699125934}
+  m_Layer: 0
+  m_Name: LakeGenerator
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3012592176057914046
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2994361812496322638}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3655599459699125934
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2994361812496322638}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d1c023f31fb15346b10ae9ba930563d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefabsToPlace:
+  - {fileID: 8470488304364887577, guid: fa3c73dba37717848ba1bbac8266acc1, type: 3}
+  - {fileID: 4619378612480622483, guid: f116555c2578b084095a08420942b437, type: 3}
+  - {fileID: 6760489824748909731, guid: aa68f9795bae4a842b0519f698252f52, type: 3}
+  - {fileID: 265332733606158925, guid: 5bc8fea1ab80ce045850af1656012c8b, type: 3}
+  minimumDistanceToExistingObject: 3
+  existingObjectsLayer:
+    serializedVersion: 2
+    m_Bits: 1
+  minUseMinSpreadForSimilars: 0
+  minSimilarsSpread: 1
+  useMaxDistanceFromSpecificObject: 0
+  specificObjectTag: 
+  maxDistanceFromSpecificObject: 10
+  amountOfAssetsToPlace: 5
+  mapGameObject: {fileID: 0}
+  minDistanceFromMapEdge: 2
