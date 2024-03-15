@@ -6,8 +6,10 @@ public class MoveControl : MonoBehaviour
     public float initialMoveSpeed = 2f;
     public float roadSpeedMultiplier = 1.5f;
     public float powerUpSpeedMultiplier = 1.2f;
+
     private float actualMoveSpeed;
     private Vector2 movement;
+    private Vector3 touchPosition;
 
     private Rigidbody2D rb;
     public float powerUpSizeMultiplier = 1.3f;
@@ -19,6 +21,9 @@ public class MoveControl : MonoBehaviour
     public AudioSource kickThump;
     public AudioSource powerUpSound;
 
+    private Camera mainCamera;
+
+
     private int eatenDonuts = 0;
 
     void Start()
@@ -26,12 +31,29 @@ public class MoveControl : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         actualMoveSpeed = initialMoveSpeed;
         actualSize = transform.localScale;
+        mainCamera = Camera.main;
     }
 
     void Update()
     {
         movement.x = Input.GetAxisRaw("Horizontal");
-        movement.y = Input.GetAxisRaw("Vertical");  
+        movement.y = Input.GetAxisRaw("Vertical");
+
+        // Touch input
+        if (Input.touchCount > 0)
+        {
+            Touch touch = Input.GetTouch(0); // Get the first touch
+            touchPosition = mainCamera.ScreenToWorldPoint(touch.position);
+            touchPosition.z = 0; // Ensure the touchPosition is at the same Z as the player
+
+            Vector2 touchDirection = (touchPosition - transform.position).normalized;
+
+            // Use the touchDirection if there is significant movement
+            if (touchDirection.magnitude > 0.1f)
+            {
+                movement = touchDirection;
+            }
+        }
 
         // Check if the player is moving
         if (movement.magnitude > 0)

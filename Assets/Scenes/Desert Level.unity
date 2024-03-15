@@ -362,6 +362,10 @@ PrefabInstance:
       propertyPath: m_TileSize
       value: 16
       objectReference: {fileID: 0}
+    - target: {fileID: 8481392667858544493, guid: 2013d30473be4404797e09599472291e, type: 3}
+      propertyPath: m_Volume
+      value: 0.05
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
